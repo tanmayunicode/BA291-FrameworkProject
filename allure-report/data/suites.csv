@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7929","Login User demo2@unicodetechnologies.in","","2026-11-28","passed","2026-11-28","TC-ValidateUser","ValidateUser.spec.js","",""
+"","8897","Login User demo3@unicodetechnologies.in","","2026-11-28","failed","2026-11-28","TC-ValidateUser","ValidateUser.spec.js","",""
+"","16705","Login User demo1@unicodetechnologies.in","","2026-11-28","failed","2026-11-28","TC-ValidateUser","ValidateUser.spec.js","",""

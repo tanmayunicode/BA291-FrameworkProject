@@ -1,12 +1,16 @@
 
 import { defineConfig, devices } from '@playwright/test';
 
+const browser = process.env.BROWSER || 'chromium';
+const baseURL = process.env.BASE_URL || 'http://localhost/uth/gadgetsgallery/catalog/index.php';
+
+
 export default defineConfig({
   testDir: './tests',
   reporter: [['html'],['line'],['allure-playwright']],
   use: {
-   
-    browserName: 'chromium',
+    baseURL: baseURL,
+    browserName: browser,
     headless: false,
     screenshot: 'on',
     trace: 'on-first-retry',

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test,expect} from '@playwright/test';
 import { HomePage } from '../pageobjects/Homepage';
 import { LoginPage } from '../pageobjects/Loginpage';
 import { WelcomePage } from '../pageobjects/Welcomepage';
@@ -11,7 +11,7 @@ const data = getExcelData("Cred");
 test.describe('TC-ValidateUser', () => {
     data.forEach(user => {
         test(`Login User ${user.Email}`, async ({ page }) => {
-            await page.goto('http://localhost/uth/gadgetsgallery/catalog/');
+            await page.goto(process.env.BASE_URL || 'http://localhost/uth/gadgetsgallery/catalog/index.php');
             let homepage = new HomePage(page);
             await homepage.click_logyourselfin();
             let loginpage = new LoginPage(page);
